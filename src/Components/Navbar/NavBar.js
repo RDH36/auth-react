@@ -15,6 +15,7 @@ export default function NavBar() {
     try {
       await signOut(auth);
       navigate("/");
+      window.location.reload();
     } catch (error) {
       alert("Check your connection and retry");
     }
